@@ -1,4 +1,3 @@
-*.js
 !zxcvbn*.js
 !demo/jquery.js
 !demo/require.js
@@ -9,3 +8,5 @@ lib
 *.swp
 *.swo
 tmux-*.log
+dist
+coverage
