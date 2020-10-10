@@ -1,4 +1,4 @@
-import { omnimatch } from "../src/matching";
+import { omnimatch } from "../../src/matching";
 
 describe("matching", () => {
   describe("omnimatch", () => {
