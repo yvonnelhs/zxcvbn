@@ -1,6 +1,6 @@
 {
   "name": "zxcvbn-typescript",
-  "version": "5.0.0-beta-1",
+  "version": "5.0.0",
   "description": "realistic password strength estimation, updated and ported to Typescript from Dan Wheeler's zxcvbn",
   "author": "Tony Richards",
   "license": "MIT",
@@ -26,13 +26,16 @@
     "build-lib": "tsc",
     "build-dist": "make-dir dist && browserify --standalone zxcvbn -t uglifyify lib/index.js > dist/zxcvbn.js",
     "lint": "eslint",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build",
+    "commit": "cz"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "browserify": "^16.5.2",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-node": "^11.1.0",
@@ -40,6 +43,7 @@
     "jest": "^26.5.2",
     "make-dir-cli": "^2.0.0",
     "prettier": "^2.1.2",
+    "standard-version": "^9.0.0",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3",
     "uglifyify": "^5.0.2"
@@ -58,5 +62,10 @@
     "scoring",
     "entropy",
     "bruteforce"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
