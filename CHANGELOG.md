@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0-beta.5](https://github.com/trichards57/zxcvbn/compare/v5.0.0-beta.4...v5.0.0-beta.5) (2020-10-11)
+
+
+### Bug Fixes
+
+* updates the demo to use the new TypeScript library ([0785f29](https://github.com/trichards57/zxcvbn/commit/0785f2911a880ee5cc05ede85a930049a493f213))
+
 ## [5.0.0-beta.4](https://github.com/trichards57/zxcvbn/compare/v5.0.0-beta.3...v5.0.0-beta.4) (2020-10-11)
 
 

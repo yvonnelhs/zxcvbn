@@ -1,6 +1,6 @@
 {
   "name": "zxcvbn-typescript",
-  "version": "5.0.0-beta.4",
+  "version": "5.0.0-beta.5",
   "description": "realistic password strength estimation, updated and ported to Typescript from Dan Wheeler's zxcvbn",
   "author": "Tony Richards",
   "license": "MIT",
