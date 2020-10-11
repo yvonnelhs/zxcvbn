@@ -6,7 +6,7 @@ import { set_user_input_dictionary } from "./matching/dictionary_match";
 
 const time = () => new Date().getTime();
 
-interface IZXCVBNResult extends IAttackTimes {
+export interface IZXCVBNResult extends IAttackTimes {
   sequence: IAnyMatch[];
   guesses: number;
   guesses_log10: number;
@@ -16,7 +16,7 @@ interface IZXCVBNResult extends IAttackTimes {
   feedback: IFeedbackItem;
 }
 
-export default function zxcvbn(
+export function zxcvbn(
   password: string,
   user_inputs: (string | number | boolean)[] = []
 ): IZXCVBNResult {
@@ -38,3 +38,5 @@ export default function zxcvbn(
 
   return { ...result, ...attack_times, calc_time, feedback: fb };
 }
+
+export default zxcvbn;
