@@ -13,7 +13,7 @@ interface IZXCVBNResult extends IAttackTimes {
   password: string;
   score: number;
   calc_time: number;
-  fb: IFeedbackItem;
+  feedback: IFeedbackItem;
 }
 
 export default function zxcvbn(
@@ -36,5 +36,5 @@ export default function zxcvbn(
   const attack_times = estimate_attack_times(result.guesses);
   const fb = get_feedback(result.score, result.sequence);
 
-  return { ...result, ...attack_times, calc_time, fb };
+  return { ...result, ...attack_times, calc_time, feedback: fb };
 }
