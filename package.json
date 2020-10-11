@@ -27,9 +27,24 @@
     "build-lib": "tsc",
     "build-dist": "make-dir dist && browserify --standalone zxcvbn -t uglifyify lib/index.js > dist/zxcvbn.js",
     "lint": "eslint",
-    "prepublishOnly": "npm run test && npm run build",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write 'src/**/*.ts' && prettier --write 'test/**/*.ts'",
+    "prepublishOnly": "npm run build",
     "commit": "cz",
     "release": "standard-version"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write 'src/**/*.ts'",
+      "prettier --write 'test/**/*.ts'",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
@@ -43,7 +58,9 @@
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "jest": "^26.5.2",
+    "lint-staged": "^10.4.0",
     "make-dir-cli": "^2.0.0",
     "prettier": "^2.1.2",
     "standard-version": "^9.0.0",
