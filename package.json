@@ -34,7 +34,7 @@
     "release": "standard-version"
   },
   "lint-staged": {
-    "**/*.js": [
+    "**/*.ts": [
       "eslint --fix",
       "prettier --write 'src/**/*.ts'",
       "prettier --write 'test/**/*.ts'"
