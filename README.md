@@ -10,6 +10,9 @@ ________________________________________________________________________
 This is a Typescript port of Dropbox's [zxcvbn](https://github.com/dropbox/zxcvbn) library.
 
 [![Build Status](https://travis-ci.org/trichards57/zxcvbn.svg?branch=master)](https://travis-ci.org/trichards57/zxcvbn)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Coverage Status](https://coveralls.io/repos/github/trichards57/zxcvbn/badge.svg?branch=master)](https://coveralls.io/github/trichards57/zxcvbn?branch=master)
+[![npm version](https://badge.fury.io/js/zxcvbn-typescript.svg)](https://badge.fury.io/js/zxcvbn-typescript)
 
 `zxcvbn-typescript` is a password strength estimator inspired by password crackers. Through pattern matching and conservative estimation, it recognizes and weighs 30k common passwords, common names and surnames according to US census data, popular English words from Wikipedia and US television and movies, and other common patterns like dates, repeats (`aaa`), sequences (`abcd`), keyboard patterns (`qwertyuiop`), and l33t speak.
 
