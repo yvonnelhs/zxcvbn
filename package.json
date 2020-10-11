@@ -27,7 +27,8 @@
     "build-dist": "make-dir dist && browserify --standalone zxcvbn -t uglifyify lib/index.js > dist/zxcvbn.js",
     "lint": "eslint",
     "prepublishOnly": "npm run test && npm run build",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
