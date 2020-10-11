@@ -22,6 +22,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "test:ci": "jest --coverage && coveralls < coverage/lcov.info",
     "build": "npm run build-lib && npm run build-dist",
     "build-lib": "tsc",
     "build-dist": "make-dir dist && browserify --standalone zxcvbn -t uglifyify lib/index.js > dist/zxcvbn.js",
@@ -36,6 +37,7 @@
     "@typescript-eslint/parser": "^4.4.0",
     "browserify": "^16.5.2",
     "commitizen": "^4.2.1",
+    "coveralls": "^3.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
