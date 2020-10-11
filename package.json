@@ -37,8 +37,7 @@
     "**/*.js": [
       "eslint --fix",
       "prettier --write 'src/**/*.ts'",
-      "prettier --write 'test/**/*.ts'",
-      "git add"
+      "prettier --write 'test/**/*.ts'"
     ]
   },
   "husky": {
