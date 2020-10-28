@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/trichards57/zxcvbn/compare/v5.0.0-beta.5...v5.0.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* fixes an issue with user dictionaries not being loaded ([5c85a6d](https://github.com/trichards57/zxcvbn/commit/5c85a6d353e90b1ceddfaf975c51c9a759132a27))
+* sets the minimum guesses to correctly use the single character value ([f333957](https://github.com/trichards57/zxcvbn/commit/f333957de4b1f4c2ed0c87eb3e4851503e236d1f))
+
 ## [5.0.0-beta.5](https://github.com/trichards57/zxcvbn/compare/v5.0.0-beta.4...v5.0.0-beta.5) (2020-10-11)
 
 
