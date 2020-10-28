@@ -28,7 +28,7 @@
     "build-dist": "make-dir dist && browserify --standalone zxcvbn -t uglifyify lib/index.js > dist/zxcvbn.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write 'src/**/*.ts' && prettier --write 'test/**/*.ts'",
+    "format": "prettier --write \"./src/**/*.ts\" && prettier --write \"./test/**/*.ts\"",
     "prepublishOnly": "npm run build",
     "commit": "cz",
     "release": "standard-version"
@@ -36,8 +36,8 @@
   "lint-staged": {
     "**/*.ts": [
       "eslint --fix",
-      "prettier --write 'src/**/*.ts'",
-      "prettier --write 'test/**/*.ts'"
+      "prettier --write --end-of-line crlf 'src/**/*.ts'",
+      "prettier --write --end-of-line crlf 'test/**/*.ts'"
     ]
   },
   "husky": {
