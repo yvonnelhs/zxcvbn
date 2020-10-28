@@ -24,9 +24,7 @@ export function zxcvbn(
   // reset the user inputs matcher on a per-request basis to keep things stateless
   const sanitized_inputs: string[] = [];
   for (const arg of user_inputs) {
-    if (typeof arg in ["string", "number", "boolean"]) {
-      sanitized_inputs.push(arg.toString().toLowerCase());
-    }
+    sanitized_inputs.push(arg.toString().toLowerCase());
   }
   set_user_input_dictionary(sanitized_inputs);
 
