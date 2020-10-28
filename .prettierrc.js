@@ -5,5 +5,5 @@ module.export = {
   printWidth: 80,
   tabWidth: 2,
   quoteProps: "consistent",
-  endOfLine: "crlf",
+  endOfLine: "auto",
 };
