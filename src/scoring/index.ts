@@ -2,6 +2,7 @@ import { IAnyMatch, IBruteForceMatch } from "../matching";
 import {
   bruteforce_guesses,
   MIN_SUBMATCH_GUESSES_MULTI_CHAR,
+  MIN_SUBMATCH_GUESSES_SINGLE_CHAR,
 } from "./bruteforce_guesses";
 import { date_guesses } from "./date_guesses";
 import { dictionary_guesses } from "./dictionary_guesses";
@@ -251,7 +252,7 @@ export function estimate_guesses(match: IAnyMatch, password: string): number {
   if (match.token.length < password.length) {
     min_guesses =
       match.token.length === 1
-        ? MIN_SUBMATCH_GUESSES_MULTI_CHAR
+        ? MIN_SUBMATCH_GUESSES_SINGLE_CHAR
         : MIN_SUBMATCH_GUESSES_MULTI_CHAR;
   }
 
