@@ -54,7 +54,7 @@ function update(
   // this sequence might be part of the final optimal sequence.
   optimal.g[k][l] = g;
   optimal.m[k][l] = m;
-  return (optimal.pi[k][l] = pi);
+  optimal.pi[k][l] = pi;
 }
 
 // helper: step backwards through optimal.m starting at the end,
@@ -114,10 +114,9 @@ function bruteforce_update(
       const i = parseInt(l);
       const last_m = object[i];
       if (last_m.pattern === "bruteforce") continue;
-      return update(password, optimal, m, i + 1, exclude_additive);
+      update(password, optimal, m, i + 1, exclude_additive);
     }
   }
-  return;
 }
 
 // helper: make bruteforce match objects spanning i to j, inclusive.
