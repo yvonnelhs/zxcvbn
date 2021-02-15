@@ -27,11 +27,11 @@ For further detail and motivation, please refer to the USENIX Security '16 [pape
 # Installation
 
 ``` shell
-npm install zxcvbn
+npm install zxcvbn-typescript
 ```
 
 ``` shell
-yarn install zxcvbn
+yarn install zxcvbn-typescript
 ````
 
 ## Browserify / Webpack
